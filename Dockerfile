@@ -1,7 +1,7 @@
 
 FROM docker.elastic.co/elasticsearch/elasticsearch:6.4.1
 
-MAINTAINER zhangliqiang <https://github.com/zhangliqiang>
+MAINTAINER https://github.com/zhangliqiang/elasticsearch-docker-with-analysis-ik
 
 RUN mkdir -p /usr/share/elasticsearch/plugins/ik \
     && cd /usr/share/elasticsearch/plugins/ik \
