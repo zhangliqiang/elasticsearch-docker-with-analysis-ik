@@ -1,1 +1,0 @@
-# elasticsearch-docker-with-analysis-ik
