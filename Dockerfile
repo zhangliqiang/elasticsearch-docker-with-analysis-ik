@@ -1,12 +1,12 @@
 
-FROM docker.elastic.co/elasticsearch/elasticsearch:6.6.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:6.6.2
 
 MAINTAINER https://github.com/zhangliqiang/elasticsearch-docker-with-analysis-ik
 
 # install IK Analysis
 RUN mkdir -p /usr/share/elasticsearch/plugins/ik \
     && cd /usr/share/elasticsearch/plugins/ik \
-    && wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.6.0/elasticsearch-analysis-ik-6.6.0.zip \
+    && wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.6.0/elasticsearch-analysis-ik-6.6.2.zip \
     && unzip *.zip \
     && rm -f *.zip
 
